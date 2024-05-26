@@ -1,0 +1,112 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Flee the Facility script",
+    LoadingTitle = "BEST Flee the facility script hub",
+    LoadingSubtitle = "by s_turna",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Flee the facility script"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "https://discord.gg/KavtqHEz", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Flee the facility script",
+       Subtitle = "Enter the key you bought from the server",
+       Note = "discord.gg/KavtqHEz to buy key",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"showcase"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+ 
+ ------------------------------------------------
+
+ local Tab = Window:CreateTab("Facility_0 Map", nil) -- Title, Image
+
+ local Section = Tab:CreateSection("Computer Teleports")
+
+ Rayfield:Notify({
+    Title = "Teleported",
+    Content = "Teleport was sucefull!",
+    Duration = 6.5,
+    Image = nil,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Ok!",
+          Callback = function()
+          print("User tapped Ok!")
+       end
+    },
+ },
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 1 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(195.101883, 4.99999857, 142.744492, 0.0872507766, 5.10093701e-09, 0.996186376, -9.36665643e-08, 1, 3.08330206e-09, -0.996186376, -9.35783717e-08, 0.0872507766)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 2 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(269.805664, 5.19999838, 262.063019, 0.999764919, 1.68535657e-08, -0.021680573, -1.70762835e-08, 1, -1.00875521e-08, 0.021680573, 1.04554045e-08, 0.999764919)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 3 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(254.689682, 4.99999857, 156.503784, -0.998708189, -9.99258774e-08, -0.0508134663, -9.9129565e-08, 1, -1.81914679e-08, 0.0508134663, -1.31308502e-08, -0.998708189)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 4 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24.6803169, 18.9999943, 169.895905, -0.999985576, 3.73909295e-08, -0.00537306257, 3.72941678e-08, 1, 1.81086577e-08, 0.00537306257, 1.79080129e-08, -0.999985576)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 5 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(80, 5.0000329, 239.699997, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 6 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(39.976429, 4.99999857, 58.4316483, 0.99999088, -5.90399409e-08, -0.00427603768, 5.91985589e-08, 1, 3.69675561e-08, 0.00427603768, -3.7220353e-08, 0.99999088)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 7 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(254.483139, 4.99999857, 66.0348206, -0.0192292258, 3.2600326e-08, 0.999815106, 9.39440312e-08, 1, -3.07995478e-08, -0.999815106, 9.33344069e-08, -0.0192292258)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 8 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(64.5579987, 20.0000267, 122.207245, 0.00614326959, 1.58060516e-08, 0.999981105, -2.92659608e-09, 1, -1.57883697e-08, -0.999981105, -2.8295486e-09, 0.00614326959)
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Go to computer 9 (if it's not there choose another one :D)",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(165.008743, 20.0000038, 168.073593, 0.0193737447, -1.48749839e-08, -0.999812305, 2.20355965e-08, 1, -1.44507837e-08, 0.999812305, -2.17514948e-08, 0.0193737447)
+    end,
+ })
+ --------------------------------------------------
